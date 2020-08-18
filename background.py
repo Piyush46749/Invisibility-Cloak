@@ -1,4 +1,5 @@
 import cv2
+
 cap = cv2.VideoCapture(0)
 while cap.isOpened():
     ret, back = cap.read()
@@ -8,5 +9,5 @@ while cap.isOpened():
             cv2.imwrite('image.jpg', back)
             break
 
-cap.release()
+cap.release() 
 cv2.destroyAllWindows()
